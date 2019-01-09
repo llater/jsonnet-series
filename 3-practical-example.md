@@ -166,10 +166,10 @@ The final JSON output can be applied directly the a Kubernetes API endpoint:
 
 Deploying Prometheus on a new or old Kubernetes cluster can be a pain, but Prometheus Operator from CoreOS does the lion's share of this work. Prometheus Operator comes with several alerts preconfigured. Visit the Prometheus UI to begin testing the new monitoring system!
 
-> Hint: if you do not have an ingress controller or load balancer solution in place for the Kubenetes cluster, try the proxy: `kubectl proxy`. Then, visit `127.0.0.1:8001/api/v1/namespaces/monitoring/services/prometheus:9090/` to check out the Prometheus UI.
+> Hint: if you do not have an ingress controller or load balancer solution in place for the Kubenetes cluster, try the proxy: `kubectl proxy`. Then, visit `127.0.0.1:8001/api/v1/namespaces/monitoring/services/prometheus-<name>:9090/proxy` to check out the Prometheus UI.
 
 ### In conclusion
-Jsonnet is a great tool but its real power is it integration into many modern applications, allowing Kubernetes users to deploy supporting services alongside the core app painlessly. We consider monitoring code part of the application deployment. The PrometheusRules and ServiceMonitors are deployed with our core app and stored with its source code.
+Jsonnet is a great tool but its real power is integration into many modern applications. Jsonnet allows Kubernetes users to deploy supporting services alongside the core app painlessly. We consider monitoring code part of the application deployment. The PrometheusRules and ServiceMonitors are deployed at the same time as our core app and stored with its source code.
 
 #### Tags
 - Kubernetes

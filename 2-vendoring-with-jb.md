@@ -58,7 +58,9 @@ RUNTIME ERROR: couldn't open import "ksonnet-lib/ksonnet.beta.2/k.libsonnet": no
 
 `vendor/` will not live in version control; rather, each time local compilation takes place, if `vendor/` does not exist, it will be generated with `jb install`.
 
-Vendoring is imperfect as a dependenwcy management solution in many software uses cases, but for Jsonnet, vendoring is a capable and simple to understand method.
+Vendoring is imperfect as a dependency management solution in many software uses cases, but for Jsonnet, vendoring is a capable and simple to understand method.
+
+Have you been on Houseparty recently? Send your family a [Facemail](https://medium.com/@houseparty/youve-got-facemail-fdc71ef8c561)!
 
 #### Tags
 - Jsonnet
